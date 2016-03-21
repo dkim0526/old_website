@@ -46,9 +46,9 @@
             <li>
                 <a href="#about" onclick = $("#menu-close").click(); >About Me</a>
             </li>
-            <li>
+            <!-- <li>
                 <a href="blog.html" onclick = $("#menu-close").click(); >My Blog</a>
-            </li>
+            </li> -->
             <li>
                 <a href="#services" onclick = $("#menu-close").click(); >Experience</a>
             </li>
@@ -100,6 +100,19 @@
                             <div class="service-item">
                                 <span class="fa-stack fa-4x">
                                 <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Korbit</strong>
+                                </h4>
+                                <p>Software Engineering Intern</p>
+<!--                                 <a href="#" class="btn btn-light">Learn More</a>
+ -->                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
                                 <i class="fa fa-cloud fa-stack-1x text-primary"></i>
                             </span>
                                 <h4>
@@ -118,7 +131,7 @@
                                 <h4>
                                     <strong>HANA</strong>
                                 </h4>
-                                <p>Our social innovation is a platform that brings a creative approach to appease our stress levels in everyday activities.</p>
+                                <p>Co-Founder</p>
 <!--                                 <a href="#" class="btn btn-light">Learn More</a>
  -->                            </div>
                         </div>
@@ -132,19 +145,6 @@
                                     <strong>Republic of Korea, Marine Corps</strong>
                                 </h4>
                                 <p>Sergeant, Communicator, Interpreter</p>
-<!--                                 <a href="#" class="btn btn-light">Learn More</a>
- -->                            </div>
-                        </div>
-                        <div class="col-md-3 col-sm-6">
-                            <div class="service-item">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
-                            </span>
-                                <h4>
-                                    <strong>Apps R Us</strong>
-                                </h4>
-                                <p>Mobile App Devlopment</p>
 <!--                                 <a href="#" class="btn btn-light">Learn More</a>
  -->                            </div>
                         </div>
@@ -205,14 +205,26 @@
                             </div>
                             <div>I was invovled in music team, which displays music and avaiable videos for kids in Town and Learning Center</div><br><br>
                         </div>
-                        <div class="col-md-6">
+                        <!-- <div class="col-md-6">
                             <div class="portfolio-item">
                                 <a href="blog.html">
                                     <img class="img-portfolio img-responsive" src="img/portfolio-9.png">
                                 </a>
                             </div>
                             <div>My Personal Blog</div>
-                        </div>
+                        </div> -->
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="blog.html">
+                                    <img class="img-portfolio img-responsive" src="img/hg.png">
+                                </a>
+                            </div>
+                            <div>Mental Health Data Aggregator</div>
+                            <div>@ HealthHack 2016, Two of my teammates and I cretaed data aggregator that
+                            collects data from Jawbone API, MyFitnesssPal to be able to display data of users to
+                            provide users with easy access to mental health professionals and support groups, while overcoming the lack of a physical face to face conversation with a large amount of user physical, nutritional, and mental health data. (Chosen as Finalist) </div>
+                        </div>                       
+
                     </div>
                     <!-- /.row (nested) -->
                     <a href="img/BeumjooKim-Resume.pdf" class="btn btn-dark">View My Resume</a>
@@ -302,7 +314,6 @@
     $(function() {
         $('a[href*=#]:not([href=#])').click(function() {
             if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
                 var target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
