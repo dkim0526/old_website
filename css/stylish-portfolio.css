@@ -237,3 +237,14 @@ hr.small {
 footer {
     padding: 100px 0;
 }
+#hover_health, #zombie_hover, #music_app_hover, #earthlab_hover, #thermo_hover, #hana_hover{
+    display: none;
+    position: relative;
+    text-align: center;
+}
+#health_aggregator:hover #hover_health,
+#zombie:hover #zombie_hover,
+#music_app:hover #music_app_hover,
+#earthlab:hover #earthlab_hover,
+#thermo:hover #thermo_hover,
+#hana:hover #hana_hover {display: block;}

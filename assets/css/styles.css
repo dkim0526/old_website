@@ -3578,3 +3578,5 @@ select {
             transform-origin: 0 0;
   }
 }
+#hover_health{display: none;}
+#health_aggregator:hover #hover_health {display: none;}
